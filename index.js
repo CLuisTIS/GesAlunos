@@ -8,10 +8,21 @@ app.use(express.static('./public'));*/
 
 
 
-app.get('/', function(req, res) {
+app.get('/' && '/index.html', function(req, res) {
     res.sendFile(path.join(__dirname, './public/index.html'));
 })
 
+app.get('/inseriralunos.html', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/inseriralunos.html'));
+})
+
+app.get('/login.html', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/login.html'));
+})
+
+app.get('/consultaalunos.html', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/consultaalunos.html'));
+})
 /*
 app.get('/:nome', function(req, res) {
     res.send('Hello ' + req.params.nome);
