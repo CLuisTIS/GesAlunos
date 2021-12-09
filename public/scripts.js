@@ -11,3 +11,13 @@ function getNavBar(){
     })
 }
 
+function adicionar(){
+    console.log('click em inserir - 1')
+
+    let nome = document.getElementById('nome').value
+    let morada = document.getElementById('morada').value
+    let email = document.getElementById('email').value
+    let telemovel = document.getElementById('telemovel').value
+    let datadenascimento = document.getElementById('datadenascimento').value
+
+}
